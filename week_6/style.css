@@ -1,0 +1,105 @@
+/* Base Styles in Light Mode */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 20px;
+  background-color: #fdf6f0; /* soft neutral base almost a light peach or beige color */
+  color: #2c2c2c;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* I will use my favourite Chakra Colors pallet */
+:root {
+  --root-red: #e53935; /* Root Chakra – grounding */
+  --sacral-orange: #fb8c00; /* Sacral Chakra – creativity */
+  --solar-yellow: #fdd835; /* Solar Plexus – confidence */
+  --heart-green: #43a047; /* Heart Chakra – love */
+  --throat-blue: #1e88e5; /* Throat Chakra – communication */
+  --third-eye-indigo: #5e35b1; /* Third Eye – intuition */
+  --crown-violet: #8e24aa; /* Crown Chakra – awareness */
+}
+
+/* Header and Buttons */
+h1,
+h2 {
+  color: var(--third-eye-indigo);
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--solar-yellow);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--sacral-orange);
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #1c1c1c;
+  color: #fdf6f0; /* default text color for body */
+}
+
+.dark-mode button {
+  background-color: var(--crown-violet);
+  color: #fdf6f0;
+}
+
+/* FAQ Section */
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  background-color: var(--throat-blue);
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.faq-answer {
+  padding: 10px;
+  background-color: #e3f2fd;
+  border-left: 4px solid var(--throat-blue);
+  color:#1c1c1c /*this will influence the color of the text inside the box so it doesn't dissapper when toggle color*/
+}
+
+.hidden {
+  display: none;
+}
+
+/* Form Styles */
+form {
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: var(--heart-green);
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid var(--root-red);
+  border-radius: 4px;
+}
+
+.error {
+  color: var(--root-red);
+  font-size: 0.9em;
+}
+
+#formSuccess {
+  margin-top: 15px;
+  color: var(--heart-green);
+  font-weight: bold;
+}

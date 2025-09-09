@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Feast Your Eyes On My Interactive Page 🚀</h1>
+      <button id="themeToggle">Toggle Light/Dark Mode</button>
+    </header>
+
+    <section>
+      <h2>🎮 Counter Game</h2>
+      <p>Score: <span id="score">0</span></p>
+      <button id="increaseBtn">Increase</button>
+      <button id="decreaseBtn">Decrease</button>
+    </section>
+
+    <section>
+      <section>
+        <h2>📚 FAQ</h2>
+        <div class="faq-item">
+          <button class="faq-question">What is JavaScript?</button>
+          <div class="faq-answer hidden">
+            JavaScript is a powerful programming language used to make websites
+            interactive and dynamic.
+            <br />
+            <a
+              href="https://www.geeksforgeeks.org/javascript/what-is-javascript/"
+              target="_blank"
+            >
+              Learn more on GeeksforGeeks
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="faq-item">
+        <button class="faq-question">Why validate forms?</button>
+        <div class="faq-answer hidden">
+          To ensure users submit correct and complete information.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>📋 Contact Form</h2>
+      <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" />
+        <span class="error" id="emailError"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+        <span class="error" id="passwordError"></span>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="formSuccess" class="hidden">Form submitted successfully!</div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
